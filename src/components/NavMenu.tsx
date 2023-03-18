@@ -6,7 +6,7 @@ import { Fragment } from "react";
 export default function NavMenu() {
   return (
     <Menu as="div" className="relative z-50 flex items-center">
-      <Menu.Button>
+      <Menu.Button className="hover:text-slate-200">
         <IconMenu2 />
       </Menu.Button>
       <Transition
