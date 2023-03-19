@@ -1,0 +1,42 @@
+---
+import PointFilled from "./icons/PointFilled.astro";
+import Point from "./icons/Point.astro";
+
+interface Props {
+  level: 1 | 2 | 3 | 4;
+}
+
+const { level } = Astro.props;
+---
+
+{
+  level === 4 ? (
+    <div class="flex items-center">
+      <PointFilled />
+      <PointFilled />
+      <PointFilled />
+      <PointFilled />
+    </div>
+  ) : level === 3 ? (
+    <div class="flex items-center">
+      <PointFilled />
+      <PointFilled />
+      <PointFilled />
+      <Point />
+    </div>
+  ) : level === 2 ? (
+    <div class="flex items-center">
+      <PointFilled />
+      <PointFilled />
+      <Point />
+      <Point />
+    </div>
+  ) : (
+    <div class="flex items-center">
+      <PointFilled />
+      <Point />
+      <Point />
+      <Point />
+    </div>
+  )
+}

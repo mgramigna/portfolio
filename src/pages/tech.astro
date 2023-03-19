@@ -1,45 +1,166 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import TechKey from "../components/TechKey.astro";
+import ProficiencyCircle from "../components/ProficiencyCircle.astro";
 ---
 
 <Layout title="Matt Gramigna | Technologies">
   <main>
-    <div
-      class="grid grid-cols-1 divide-y-2 divide-stone-50 px-8 pt-8 sm:grid-cols-4 sm:divide-y-0 sm:divide-x-2"
-    >
-      <div class="text-center text-2xl">
-        Languages
-        <div class="flex flex-col text-left text-xl">
-          <div class="italic">TypeScript</div>
-          <div class="italic">JavaScript</div>
-          <div class="italic">HTML/CSS</div>
-          <div class="italic">Java</div>
-          <div class="italic">Python</div>
-          <div class="italic">Rust</div>
-          <div class="italic">Ruby</div>
-          <div class="italic">C</div>
-          <div class="italic">C++</div>
-          <div class="italic">Bash</div>
+    <div class="flex justify-center px-8 pt-12">
+      <TechKey />
+    </div>
+    <div class="flex justify-center py-8 font-extralight italic">
+      (Sorted from most recently to least recently used)
+    </div>
+    <div class="grid grid-cols-1 gap-x-12 px-8 sm:grid-cols-2 lg:grid-cols-4">
+      <div class="pt-4 text-center text-2xl sm:pt-0">
+        <div class="rounded-lg border-2 p-2 sm:p-4">Languages</div>
+        <div class="flex flex-col pt-4 text-left text-xl">
+          <div class="flex justify-between">
+            <div class="italic">TypeScript</div>
+            <ProficiencyCircle level={4} />
+          </div>
+          <div class="flex justify-between">
+            <div class="italic">JavaScript</div>
+            <ProficiencyCircle level={4} />
+          </div>
+          <div class="flex justify-between">
+            <div class="italic">HTML/CSS</div>
+            <ProficiencyCircle level={4} />
+          </div>
+          <div class="flex justify-between">
+            <div class="italic">Rust</div>
+            <ProficiencyCircle level={1} />
+          </div>
+          <div class="flex justify-between">
+            <div class="italic">Ruby</div>
+            <ProficiencyCircle level={2} />
+          </div>
+          <div class="flex justify-between">
+            <div class="italic">Java</div>
+            <ProficiencyCircle level={3} />
+          </div>
+          <div class="flex justify-between">
+            <div class="italic">Python</div>
+            <ProficiencyCircle level={3} />
+          </div>
+          <div class="flex justify-between">
+            <div class="italic">Bash</div>
+            <ProficiencyCircle level={1} />
+          </div>
+          <div class="flex justify-between">
+            <div class="italic">C</div>
+            <ProficiencyCircle level={2} />
+          </div>
+          <div class="flex justify-between">
+            <div class="italic">C++</div>
+            <ProficiencyCircle level={2} />
+          </div>
         </div>
       </div>
-      <div class="text-center text-2xl">
-        Frameworks
-
-        <div class="flex flex-col text-left text-xl">
-          <div class="italic">TypeScript</div>
-          <div class="italic">JavaScript</div>
-          <div class="italic">HTML/CSS</div>
-          <div class="italic">Java</div>
-          <div class="italic">Python</div>
-          <div class="italic">Rust</div>
-          <div class="italic">Ruby</div>
-          <div class="italic">C</div>
-          <div class="italic">C++</div>
-          <div class="italic">Bash</div>
+      <div class="pt-4 text-center text-2xl sm:pt-0">
+        <div class="rounded-lg border-2 p-2 sm:p-4">Frameworks</div>
+        <div class="flex flex-col pt-4 text-left text-xl">
+          <div class="flex justify-between">
+            <div class="italic">Node.js</div>
+            <ProficiencyCircle level={4} />
+          </div>
+          <div class="flex justify-between">
+            <div class="italic">React</div>
+            <ProficiencyCircle level={4} />
+          </div>
+          <div class="flex justify-between">
+            <div class="italic">Next.js</div>
+            <ProficiencyCircle level={4} />
+          </div>
+          <div class="flex justify-between">
+            <div class="italic">TailwindCSS</div>
+            <ProficiencyCircle level={3} />
+          </div>
+          <div class="flex justify-between">
+            <div class="italic">tRPC</div>
+            <ProficiencyCircle level={2} />
+          </div>
+          <div class="flex justify-between">
+            <div class="italic">Prisma</div>
+            <ProficiencyCircle level={2} />
+          </div>
+          <div class="flex justify-between">
+            <div class="italic">Astro</div>
+            <ProficiencyCircle level={1} />
+          </div>
+          <div class="flex justify-between">
+            <div class="italic">Mantine</div>
+            <ProficiencyCircle level={3} />
+          </div>
+          <div class="flex justify-between">
+            <div class="italic">MaterialUI</div>
+            <ProficiencyCircle level={3} />
+          </div>
+          <div class="flex justify-between">
+            <div class="italic">React Native</div>
+            <ProficiencyCircle level={2} />
+          </div>
+          <div class="flex justify-between">
+            <div class="italic">NestJS</div>
+            <ProficiencyCircle level={1} />
+          </div>
+          <div class="flex justify-between">
+            <div class="italic">GraphQL</div>
+            <ProficiencyCircle level={1} />
+          </div>
+          <div class="flex justify-between">
+            <div class="italic">Vue</div>
+            <ProficiencyCircle level={2} />
+          </div>
+          <div class="flex justify-between">
+            <div class="italic">Django</div>
+            <ProficiencyCircle level={1} />
+          </div>
+          <div class="flex justify-between">
+            <div class="italic">Flask</div>
+            <ProficiencyCircle level={1} />
+          </div>
         </div>
       </div>
-      <div class="text-center text-2xl">Databases</div>
-      <div class="text-center text-2xl">Misc</div>
+      <div class="pt-4 text-center text-2xl sm:pt-0">
+        <div class="rounded-lg border-2 p-2 sm:p-4">Databases</div>
+        <div class="flex flex-col pt-4 text-left text-xl">
+          <div class="flex justify-between">
+            <div class="italic">Postgres</div>
+            <ProficiencyCircle level={3} />
+          </div>
+          <div class="flex justify-between">
+            <div class="italic">MySQL</div>
+            <ProficiencyCircle level={2} />
+          </div>
+          <div class="flex justify-between">
+            <div class="italic">MongoDB</div>
+            <ProficiencyCircle level={4} />
+          </div>
+          <div class="flex justify-between">
+            <div class="italic">SQLite</div>
+            <ProficiencyCircle level={1} />
+          </div>
+        </div>
+      </div>
+      <div class="pt-4 text-center text-2xl sm:pt-0">
+        <div class="rounded-lg border-2 p-2 sm:p-4">Misc</div>
+        <div class="flex flex-col pt-4 text-left text-xl">
+          <div class="flex justify-between">
+            <div class="italic">Git</div>
+            <ProficiencyCircle level={4} />
+          </div>
+          <div class="flex justify-between">
+            <div class="italic">Docker</div>
+            <ProficiencyCircle level={3} />
+          </div>
+          <div class="flex justify-between">
+            <div class="italic">Ansible</div>
+            <ProficiencyCircle level={1} />
+          </div>
+        </div>
+      </div>
     </div>
   </main>
 </Layout>

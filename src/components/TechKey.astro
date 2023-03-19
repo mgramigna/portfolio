@@ -1,0 +1,48 @@
+---
+import ProficiencyCircle from "./ProficiencyCircle.astro";
+import ArrowRight from "./icons/ArrowRight.astro";
+---
+
+<div class="w-full">
+  <div class="flex flex-col gap-4">
+    <div class="flex">
+      <div class="flex items-center">
+        <ProficiencyCircle level={4} />
+        <ArrowRight />
+      </div>
+      <div class="pl-4">
+        &gt;3 years of experience. Confident teaching to others
+      </div>
+    </div>
+    <div class="flex">
+      <div class="flex items-center">
+        <ProficiencyCircle level={3} />
+        <ArrowRight />
+      </div>
+      <div class="pl-4">
+        &gt;2 years of experience. Confident developing without need for much
+        documentation
+      </div>
+    </div>
+    <div class="flex">
+      <div class="flex items-center">
+        <ProficiencyCircle level={2} />
+        <ArrowRight />
+      </div>
+      <div class="pl-4">
+        &gt;1 year of experience. Confident with fundamentals while referencing
+        documentation for complex tasks
+      </div>
+    </div>
+    <div class="flex">
+      <div class="flex items-center">
+        <ProficiencyCircle level={1} />
+        <ArrowRight />
+      </div>
+      <div class="pl-4">
+        &gt;6 months of experience. Confident developing while frequently
+        referencing documentation
+      </div>
+    </div>
+  </div>
+</div>
