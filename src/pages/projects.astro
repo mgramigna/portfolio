@@ -1,9 +1,12 @@
 ---
+import ProjectList from "../components/ProjectList";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Matt Gramigna | Projects">
   <main>
-    <div>projc</div>
+    <div class="p-4 sm:p-12">
+      <ProjectList client:load />
+    </div>
   </main>
 </Layout>
